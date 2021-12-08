@@ -1,0 +1,22 @@
+export const SliderData = [
+    {
+      image:
+        'https://i0.wp.com/media.premiumtimesng.com/wp-content/files/2020/09/551d770a-13ac-490a-b45f-452672b6fe3e.png?fit=2812%2C2812&ssl=1'
+    },
+    {
+      image:
+        'https://www.verywellhealth.com/thmb/VaXNpdZpPu6YkY8TLGojZfeqhis=/614x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/difference-between-alzheimers-and-lewy-body-dementia-98749_final-8498478f530b4c499cd623b82ff806b7.jpg'
+    },
+    {
+      image:
+        'https://images.theconversation.com/files/179025/original/file-20170720-19155-1efad6v.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=754&h=566&fit=crop&dpr=1'
+    },
+    {
+      image:
+        'http://www.aal-europe.eu/wp-content/uploads/2020/09/Screen-Shot-2020-09-03-at-22.03.30.png'
+    },
+    {
+      image:
+        'https://assets.weforum.org/editor/responsive_large_webp_FPIaRNGlCZkFBbeC231KKFYYnZ_gxQgsphOSotT9Cz4.webp'
+    }
+  ];

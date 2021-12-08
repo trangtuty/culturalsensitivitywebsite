@@ -47,13 +47,17 @@ padding: 20px;
 background-color: #b5b5b5;
 margin-left:80px;
 `
-
+const styleObj = {
+    fontSize: 30,
+    margin: "auto"
+    
+}
 function PatientInformationPage() {
     return (
     <Container>
-       <MainHeader> Patient Information Page</MainHeader>
+       <MainHeader></MainHeader>
        <PersonPage> 
-           <PatientName> PatientsName</PatientName>
+           <PatientName> <h1 style={styleObj}> Patient Name</h1></PatientName>
            <PatientFeatures> 
            <PatientFeatures2><FaGlobe color="#7f4344" size="1.3em"/>  Nationality </PatientFeatures2>
            <PatientFeatures2><FaBible color="#7f4344" size="1.3em"/> Religion</PatientFeatures2>
