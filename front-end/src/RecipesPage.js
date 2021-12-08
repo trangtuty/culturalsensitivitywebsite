@@ -2,33 +2,38 @@ import styled from 'styled-components';
 import BreakfastImg from './assets/breakfast.jpg'
 import BulgarianFlag from './assets/bgFlag.png'
 const Container = styled.div`
+@media (max-width: 414px) {
     width:100%;
     height:100%;
+}
 `
 const MainHeader = styled.h1`
     font-size:1.3em;
     text-align:center;
 `
 const LandingImg = styled.img`
+@media (max-width: 415px) {
     width:100%;
     background-size:cover;
     height:600px;
+    padding-bottom:10%;
+}
 `
 
 const RecepiesRow = styled.div`
+@media (max-width: 415px) {
     width:80%;
     margin-left:10%;
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    margin-top:3%;
-    padding-bottom:3%;
+}
 `
 const RecipesCol = styled.div`
-    width:30%;
+@media (max-width: 415px) {
+    max-width:100%;
     border-radius:25px;
     -webkit-box-shadow: 0px 0px 11px 6px #D3D3D3; 
     box-shadow: 0px 0px 11px 6px #D3D3D3;
+    margin-bottom:10%;
+}
 `
 const RecepiesCardImg = styled.img`
     width:100%;

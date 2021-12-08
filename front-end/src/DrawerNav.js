@@ -17,20 +17,28 @@ const NavigationHeader = styled.h1`
     margin-left:15%;
 `
 const Container = styled.div`
-  background-color: #D3D3D3;
-  height:50px;
-  width:100%;
-  position:fixed;
-  top:0;
-  left:0;
-  display:flex;
-  flex-direction:row;
+@media (max-width: 415px) {
+    background-color: #D3D3D3;
+    height:50px;
+    max-width:100%;
+    min-width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    display:flex;
+    flex-direction:row;
+    z-index:15;
+}
 `
 const ContainerLeft = styled.div`
-  width:90%;
+@media (max-width: 415px) {
+  width:85%;
+}
 `
 const ContainerRight = styled.div`
-  width:10%;
+@media (max-width: 415px) {
+  width:15%;
+}
 `
 export default function DrawerNav() {
   const [state, setState] = React.useState({
