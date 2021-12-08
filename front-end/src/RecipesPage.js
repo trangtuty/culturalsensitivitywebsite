@@ -1,15 +1,12 @@
 import styled from 'styled-components';
 import BreakfastImg from './assets/breakfast.jpg'
 import BulgarianFlag from './assets/bgFlag.png'
+
 const Container = styled.div`
-@media (max-width: 414px) {
+@media (max-width: 415px) {
     width:100%;
     height:100%;
 }
-`
-const MainHeader = styled.h1`
-    font-size:1.3em;
-    text-align:center;
 `
 const LandingImg = styled.img`
 @media (max-width: 415px) {
@@ -61,16 +58,44 @@ const CardDesc = styled.h1`
     font-size:0.9em;
     font-weight:500;
 `
+const CardDescUl = styled.ul`
+    max-width:80%;
+    min-width:10%;
+    padding-bottom:5%;
+    margin-left:10%;
+    padding-left:0%;
+`
+const CardDescLi = styled.li`
+    font-size:0.9em;
+    font-weight:500;
+    text-align:left;
+`
 const Hr = styled.hr`
     width:80%;
     margin-left:10%:
     background-color: #D3D3D3;
     color: #D3D3D3;
 `
+const LandingPageHeader = styled.h2`
+    font-size:2.5em;
+    color:white;
+    font-weight:600;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+`
+const LandingImgTextContainer = styled.div`
+    position: relative;
+    text-align: center;
+`
 function RecipesPage() {
     return (
     <Container>
-       <LandingImg src={BreakfastImg} />
+        <LandingImgTextContainer>
+            <LandingImg src={BreakfastImg} />
+            <LandingPageHeader>Recipes</LandingPageHeader>
+       </LandingImgTextContainer>
        <RecepiesRow>
            <RecipesCol>
                 <RecepiesCardImg src={BreakfastImg} />
@@ -88,11 +113,11 @@ function RecipesPage() {
                 <Hr/>
                 <DescriptionContainer>
                     <CardHeader>Ingredients</CardHeader>
-                    <CardDesc>
-                        Lorem30 dafdssdfsd sdfsdsd 
-                        fsdf sdf sdf sdf sdf sdf sd
-                        sdfsdfdsf  sdf s
-                    </CardDesc>
+                    <CardDescUl>
+                       <CardDescLi> Lorem30 dafdssdfsd sdfsdsd </CardDescLi>
+                       <CardDescLi>fsdf sdf sdf sdf sdf sdf sd</CardDescLi>
+                       <CardDescLi>sdfsdfdsf  sdf s</CardDescLi>
+                    </CardDescUl>
                 </DescriptionContainer>
            </RecipesCol>
 
@@ -112,11 +137,11 @@ function RecipesPage() {
                 <Hr/>
                 <DescriptionContainer>
                     <CardHeader>Ingredients</CardHeader>
-                    <CardDesc>
-                        Lorem30 dafdssdfsd sdfsdsd 
-                        fsdf sdf sdf sdf sdf sdf sd
-                        sdfsdfdsf  sdf s
-                    </CardDesc>
+                    <CardDescUl>
+                       <CardDescLi> Lorem30 dafdssdfsd sdfsdsd </CardDescLi>
+                       <CardDescLi>fsdf sdf sdf sdf sdf sdf sd</CardDescLi>
+                       <CardDescLi>sdfsdfdsf  sdf s</CardDescLi>
+                    </CardDescUl>
                 </DescriptionContainer>
            </RecipesCol>
 
@@ -136,11 +161,11 @@ function RecipesPage() {
                 <Hr/>
                 <DescriptionContainer>
                     <CardHeader>Ingredients</CardHeader>
-                    <CardDesc>
-                        Lorem30 dafdssdfsd sdfsdsd 
-                        fsdf sdf sdf sdf sdf sdf sd
-                        sdfsdfdsf  sdf s
-                    </CardDesc>
+                    <CardDescUl>
+                       <CardDescLi> Lorem30 dafdssdfsd sdfsdsd </CardDescLi>
+                       <CardDescLi>fsdf sdf sdf sdf sdf sdf sd</CardDescLi>
+                       <CardDescLi>sdfsdfdsf  sdf s</CardDescLi>
+                    </CardDescUl>
                 </DescriptionContainer>
            </RecipesCol>
        </RecepiesRow>
@@ -162,11 +187,11 @@ function RecipesPage() {
                 <Hr/>
                 <DescriptionContainer>
                     <CardHeader>Ingredients</CardHeader>
-                    <CardDesc>
-                        Lorem30 dafdssdfsd sdfsdsd 
-                        fsdf sdf sdf sdf sdf sdf sd
-                        sdfsdfdsf  sdf s
-                    </CardDesc>
+                    <CardDescUl>
+                       <CardDescLi> Lorem30 dafdssdfsd sdfsdsd </CardDescLi>
+                       <CardDescLi>fsdf sdf sdf sdf sdf sdf sd</CardDescLi>
+                       <CardDescLi>sdfsdfdsf  sdf s</CardDescLi>
+                    </CardDescUl>
                 </DescriptionContainer>
            </RecipesCol>
 
@@ -186,11 +211,11 @@ function RecipesPage() {
                 <Hr/>
                 <DescriptionContainer>
                     <CardHeader>Ingredients</CardHeader>
-                    <CardDesc>
-                        Lorem30 dafdssdfsd sdfsdsd 
-                        fsdf sdf sdf sdf sdf sdf sd
-                        sdfsdfdsf  sdf s
-                    </CardDesc>
+                    <CardDescUl>
+                       <CardDescLi> Lorem30 dafdssdfsd sdfsdsd </CardDescLi>
+                       <CardDescLi>fsdf sdf sdf sdf sdf sdf sd</CardDescLi>
+                       <CardDescLi>sdfsdfdsf  sdf s</CardDescLi>
+                    </CardDescUl>
                 </DescriptionContainer>
            </RecipesCol>
 
@@ -210,11 +235,11 @@ function RecipesPage() {
                 <Hr/>
                 <DescriptionContainer>
                     <CardHeader>Ingredients</CardHeader>
-                    <CardDesc>
-                        Lorem30 dafdssdfsd sdfsdsd 
-                        fsdf sdf sdf sdf sdf sdf sd
-                        sdfsdfdsf  sdf s
-                    </CardDesc>
+                    <CardDescUl>
+                       <CardDescLi> Lorem30 dafdssdfsd sdfsdsd </CardDescLi>
+                       <CardDescLi>fsdf sdf sdf sdf sdf sdf sd</CardDescLi>
+                       <CardDescLi>sdfsdfdsf  sdf s</CardDescLi>
+                    </CardDescUl>
                 </DescriptionContainer>
            </RecipesCol>
        </RecepiesRow>
