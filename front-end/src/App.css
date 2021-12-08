@@ -39,23 +39,24 @@
 
 .slider {
   position: relative;
-  height: 100vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 150px;
+  margin-left: 0px;
+  padding-bottom: 20%;
 }
 
 .image {
-  width: 800px;
-  height: 500px;
+  width: 400px;
+  height: 350px;
   border-radius: 10px;
 }
 
 .right-arrow {
   position: absolute;
-  top: 50%;
-  right: 330px;
+  top: 35%;
+  right: 8px;
   font-size: 3rem;
   color: #000;
   z-index: 10;
@@ -65,8 +66,8 @@
 
 .left-arrow {
   position: absolute;
-  top: 50%;
-  left: 320px;
+  top: 35%;
+  left: 3px;
   font-size: 3rem;
   color: #000;
   z-index: 10;
@@ -83,4 +84,7 @@
   opacity: 1;
   transition-duration: 1s;
   transform: scale(1.08);
+}
+body {
+  background-color: rgb(246, 193, 51, 0.1);
 }

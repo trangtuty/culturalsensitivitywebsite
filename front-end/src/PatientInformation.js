@@ -7,65 +7,74 @@ import { FaDrum } from "react-icons/fa";
 import { FaMusic } from "react-icons/fa";
 
 const Container = styled.div`
+@media (max-width: 415px) {
     width:100%;
     height:100%;
+    margin-top:25%;
+}
 `
 const MainHeader = styled.h1`
     font-size:1.3em;
     text-align:center;
 `
 const PersonPage = styled.div`
-background-color: #b5b5b5;
-min-width: 350px;
-max-width: 600px;
-height: 800px;
-border-radius: 14px;
-box-shadow: 0px 10px 30px hsl(1, 100%, 90%, 1);
-margin: auto;
-text-align:center;
+    @media (max-width: 415px) {
+    background-color: #b5b5b5;
+    width: 90%;
+    min-height:80vh;
+    border-radius: 14px;
+    box-shadow: 0px 10px 30px hsl(1, 100%, 90%, 1);
+    margin: auto;
+    text-align:center;
+    }
 `
 const PatientName = styled.h2`
-background-color: #d2acac;
-height: 50px;
-text-align:center;
+    @media (max-width: 415px) {
+    background-color: #d2acac;
+    height: 80px;
+    text-align:center;
+    border-radius:15px 15px 0px 0px;
+    }
 `
-const PatientFeatures = styled.span`
-display: flex;
-flex-wrap:wrap;
-width: 600px;
-height: 700px;
-padding: 0px;
-background-color: #b5b5b5;
-margin:0px; 
+const PatientRow = styled.span`
+    @media (max-width: 415px) {
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    width: 90%;
+    margin-left:5%;
+    min-height: 20vh;
+    background-color:#b5b5b5;
+    margin: 20px;
+    } 
 `
-const PatientFeatures2 = styled.span`
-flex:1
-flex-wrap:wrap;
-width: 130px;
-height: 100px;
-padding: 20px;
-background-color: #b5b5b5;
-margin-left:80px;
+const PatientCol = styled.span`
+    @media (max-width: 415px) {
+    width: 49%;
+    min-height: 50%;
+    background-color: #b5b5b5;
+    }
 `
-const styleObj = {
-    fontSize: 30,
-    margin: "auto"
-    
-}
+const PatientHeader = styled.h1`
+    font-size:2em;
+`
 function PatientInformationPage() {
     return (
     <Container>
-       <MainHeader></MainHeader>
        <PersonPage> 
-           <PatientName> <h1 style={styleObj}> Patient Name</h1></PatientName>
-           <PatientFeatures> 
-           <PatientFeatures2><FaGlobe color="#7f4344" size="1.3em"/>  Nationality </PatientFeatures2>
-           <PatientFeatures2><FaBible color="#7f4344" size="1.3em"/> Religion</PatientFeatures2>
-           <PatientFeatures2><FaPeopleArrows color="#7f4344" size="1.3em"/> Family</PatientFeatures2>
-           <PatientFeatures2><FaDrumstickBite color="#7f4344" size="1.3em"/> Food</PatientFeatures2>
-           <PatientFeatures2><FaDrum color="#7f4344" size="1.3em"/> Events</PatientFeatures2>
-           <PatientFeatures2><FaMusic color="#7f4344" size="1.3em"/> Music</PatientFeatures2>
-           </PatientFeatures>
+           <PatientName> <PatientHeader> Patient Name</PatientHeader></PatientName>
+           <PatientRow> 
+            <PatientCol><FaGlobe color="#7f4344" size="1.3em"/>  Nationality </PatientCol>
+            <PatientCol><FaBible color="#7f4344" size="1.3em"/> Religion</PatientCol>
+           </PatientRow>
+           <PatientRow>
+                <PatientCol><FaPeopleArrows color="#7f4344" size="1.3em"/> Family</PatientCol>
+                <PatientCol><FaDrumstickBite color="#7f4344" size="1.3em"/> Food</PatientCol>
+           </PatientRow>
+           <PatientRow>
+            <PatientCol><FaDrum color="#7f4344" size="1.3em"/> Events</PatientCol>
+            <PatientCol><FaMusic color="#7f4344" size="1.3em"/> Music</PatientCol>
+           </PatientRow>
            
 
        </PersonPage>
