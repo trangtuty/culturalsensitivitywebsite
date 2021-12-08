@@ -54,9 +54,9 @@ function HomePage() {
        <HomePageHeader><h1 style={styleObj}>Pulsed for Dementia</h1></HomePageHeader>
        <ImageSlider slides={SliderData} />
        <HomePageFooter>
-           <FooterElements><a href="https://foodnetwork.co.uk/search/?q=global-flavors&utm_source=foodnetwork.com&utm_medium=domestic"><FaDrumstickBite color="#7f4344" size="5em" margin="auto"/></a><h2 fontSize="5">International Dishes</h2></FooterElements>
-           <FooterElements><a href="https://stacker.com/stories/3598/20-celebrations-holiday-season-besides-christmas"><FaDrum color="#7f4344" size="5em" margin="auto"/></a><h2>Cultural Events Scheduled</h2></FooterElements>
-           <FooterElements><a href="https://www.liftedcare.com/21-ideas-for-group-activities-in-your-care-home/"><FaPuzzlePiece color="#7f4344" size="5em" margin="auto"/></a><h2>Fun Activities</h2></FooterElements>
+           <FooterElements><a href="https://foodnetwork.co.uk/search/?q=global-flavors&utm_source=foodnetwork.com&utm_medium=domestic" target="_blank"><FaDrumstickBite color="#7f4344" size="5em" margin="auto"/></a><h2 fontSize="5">International Dishes</h2></FooterElements>
+           <FooterElements><a href="https://stacker.com/stories/3598/20-celebrations-holiday-season-besides-christmas" target="_blank"><FaDrum color="#7f4344" size="5em" margin="auto"/></a><h2>Cultural Events Scheduled</h2></FooterElements>
+           <FooterElements><a href="https://www.liftedcare.com/21-ideas-for-group-activities-in-your-care-home/" target="_blank"><FaPuzzlePiece color="#7f4344" size="5em" margin="auto"/></a><h2>Fun Activities</h2></FooterElements>
        </HomePageFooter>
     </Container>
     );

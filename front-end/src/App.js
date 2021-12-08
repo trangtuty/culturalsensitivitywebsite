@@ -17,7 +17,8 @@ function App() {
     <Container>
       <DrawerNav />
       <Router>
-            <Routes>            
+            <Routes>
+              <Route path="/" element={<HomePage/>} />              
               <Route path="/home" element={<HomePage/>} /> 
               <Route path="/recepies" element={<RecipesPage/>} /> 
               <Route path="/inforamtion" element={<PatientInformationPage/>} /> 
